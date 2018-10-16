@@ -3,6 +3,7 @@
 let nombre: String = "Ricardo Tapia";
 let edad: number = 23;
 
+
 const PERSONAJE: { nombre: String, edad: number } = {
   nombre: nombre,
   edad: edad
@@ -81,3 +82,4 @@ class rectangulo {
     return this.base * this.altura;
   }
 }
+
