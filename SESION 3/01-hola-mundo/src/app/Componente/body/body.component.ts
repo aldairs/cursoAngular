@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-body',
@@ -6,6 +6,16 @@ import {Component} from '@angular/core';
 })
 
 export class BodyComponent {
+
+  frase: any = {
+    mensaje: 'Mama qué, moto?',
+    autor: 'Mototaxi'
+
+  };
+
+   Mostrar = true;
+
+   colegas: String[] =  ['Jose' , 'Alex' , 'hader'];
 
 
 }
