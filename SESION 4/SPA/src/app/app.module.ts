@@ -10,19 +10,26 @@ import { HomeComponent } from './componetes/home/home.component';
 import { AboutComponent } from './componetes/about/about.component';
 import { HeroesComponent } from './componetes/heroes/heroes.component';
 
+
+import { HeroesService } from './servicios/heroes.service';
+import { HeroeComponent } from './componetes/heroe/heroe.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroeComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [
+    HeroesService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
