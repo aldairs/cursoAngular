@@ -57,16 +57,19 @@ export class HeroesService {
 
   constructor() {
 
-console.log("Hola, servicio listo");
   }
 
-  getHeroes(){
+  getHeroes() {
     return this.heroes;
+  }
+
+  geHeroe(idx: number) {
+  return this.heroes[idx];
   }
 }
 
 
-export interface Heroe{
+export interface Heroe {
   nombre: String;
   bio: String;
   img: String;
