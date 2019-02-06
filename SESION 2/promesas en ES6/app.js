@@ -1,9 +1,10 @@
+"use strict";
 // Un archivo simple de TypeScript
 //creamos la promesa
-var prom = new Promise(function (resolved, reject) {
-    setTimeout(function () {
+let prom = new Promise(function (resolved, rejec) {
+    setTimeout(() => {
         console.log("Hola, me haz ejecutado");
-        resolved();
+        rejec();
     }, 1500);
 });
 prom.then(function () {

@@ -2,11 +2,11 @@
 
 //creamos la promesa
 
-let prom:any = new Promise(function (resolved:any, reject:any) {
+let prom:any = new Promise(function (resolved:any, rejec:any) {
 
   setTimeout(() => {
     console.log("Hola, me haz ejecutado");
-    resolved();
+    rejec();
   }, 1500)})
 
 
