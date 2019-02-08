@@ -1,7 +1,29 @@
 <div class="container">
-  <div class="row filaHeroe">
-    <div class="col-3 columnaHeroe">
-      <img src="{{ Heroes.img }}" class="roundeds" alt="Card image cap" />
+  <h1>
+    {{ Heroes.nombre }} <SMAll>{{ Heroes.aparicion }}</SMAll>
+  </h1>
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{{ Heroes.img }}" class="img-fluid" />
+      <br /><br />
+      <a href="#" class="btn btn-outline-danger btn-block">Regresar</a>
+    </div>
+    <div class="col-md-8">
+      <h3>
+        {{ Heroes.nombre }} 
+        
+      </h3>
+      <p>
+        {{ Heroes.bio }}
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis et
+        ut, consequatur nam quaerat officiis enim autem veniam sint. Dicta
+        eligendi voluptatibus aspernatur blanditiis quidem consequatur quis
+        dolores ut mollitia!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis et
+        ut, consequatur nam quaerat officiis enim autem veniam sint. Dicta
+        eligendi voluptatibus aspernatur blanditiis quidem consequatur quis
+        dolores ut mollitia!
+      </p>
     </div>
   </div>
 </div>
@@ -11,15 +33,19 @@
     margin-top: 50px;
   }
   .columnaHeroe {
-  
+    background: #e6e6e6;
   }
 
   .filaHeroe {
     height: 100px;
+    background: #bdbdbd;
   }
 
   .filaHeroe img {
     height: 100%;
+    width: 100%;
+  }
 
+  .imagenHeroe {
   }
 </style>
