@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { HeroesService } from '../../servicios/heroes.service';
+import { Router } from '@angular/router';
 
 export interface Heroe {
   nombre: String;
@@ -17,16 +18,33 @@ export interface Heroe {
 export class HeroeComponent implements OnInit {
 
   Heroes: Heroe;
+  RutaCasaHeroe: string;
 
   constructor(private activatedRoute: ActivatedRoute,
-              private heroesService: HeroesService  ) { 
+    private heroesService: HeroesService,
+    private routers: Router) {
+
+
 
     this.activatedRoute.params.subscribe(params => {
-     console.log( this.Heroes =  this.heroesService.geHeroe(params['i']));
+      console.log(this.Heroes = this.heroesService.geHeroe(params['i']));
     });
+
+
   }
 
   ngOnInit() {
+
+    let varibleTemporal;
+
+     varibleTemporal = this.Heroes.casa;
+    console.log(varibleTemporal);
+
+    if (varibleTemporal === 'Marvel') {
+      this.RutaCasaHeroe = './../../../assets/img/marvel.png';
+    } else {
+      this.RutaCasaHeroe = './../../../assets/img/DC.png';
+    }
   }
 
 
