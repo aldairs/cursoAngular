@@ -1,0 +1,12 @@
+<h1><span>Herues Marvel y DC</span></h1>
+<hr />
+
+<div class="row">
+  <div class="alert alert-info" role="alert" *ngIf="this.heroes.length == 0">
+    no existe resultado con el termino: {{ termino }}
+  </div>
+</div>
+
+<div class="card-columns">
+  //*ngFor="let Heroe of heroes; let i = index"
+</div>
