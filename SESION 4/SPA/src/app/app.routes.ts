@@ -1,3 +1,4 @@
+import { HeroeTrajetaComponent } from './componetes/heroe-trajeta/heroe-trajeta.component';
 import { Component } from '@angular/core';
 import {RouterModule, Routes } from '@angular/router';
 import { HomeComponent} from './componetes/home/home.component';
@@ -15,6 +16,7 @@ const APP_ROUTES: Routes = [
   { path: 'heroe/:i', component: HeroeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'buscarHeroe/:termino', component: BuscarHeroeComponent },
+  { path: 'tarjetaHeroe/:i', component: HeroeTrajetaComponent },
   { path: '**', pathMatch: 'full' , redirectTo : 'home' }
 ];
 

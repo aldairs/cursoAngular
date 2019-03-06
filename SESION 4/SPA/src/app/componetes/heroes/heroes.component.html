@@ -1,24 +1,10 @@
 <h1><span>Herues Marvel y DC</span></h1>
 <hr />
 <div class="card-columns">
-  <div class="card" *ngFor="let Heroe of heroes; let i = index">
-    <img
-      class="card-img-top img-fluid"
-      src= "{{ Heroe.img }}"
-      alt="Card image cap"
-    />
-    <div class="card-block" >
-      <h4 class="card-title"> {{ Heroe.nombre }} </h4>
-      <p class="card-text">
-        {{ Heroe.bio }}
-      </p>
-      <p class="card-text">
-        <small class="text-muted">{{Heroe.aparicion}}</small>
-      </p>
-      <!-- <button  (click)="verHeroe(i);" type="button" class="btn btn-outline-primary btn-block">
-        Ver más
-      </button> -->
-      <a  [routerLink]="['/heroe',i]" class="btn btn-outline-primary">Ver más...</a>
-    </div>
-  </div>
+
+  <app-heroe-trajeta [index]= "i" [Heroe] = "heroe" *ngFor="let heroe of heroes; let i = index">
+
+  </app-heroe-trajeta>
+    
+  
 </div>

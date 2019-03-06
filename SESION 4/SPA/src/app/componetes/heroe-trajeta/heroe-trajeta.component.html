@@ -1,18 +1,20 @@
-<img
-  class="card-img-top img-fluid"
-  src="{{ Heroe.img }}"
-  alt="Card image cap"
-/>
-<div class="card-block">
-  <h4 class="card-title">{{ Heroe.nombre }}</h4>
-  <p class="card-text">
-    {{ Heroe.bio }}
-  </p>
-  <p class="card-text">
-    <small class="text-muted">{{ Heroe.aparicion }}</small>
-  </p>
-  <!-- <button  (click)="verHeroe(i);" type="button" class="btn btn-outline-primary btn-block">
+<div class="card" >
+    <img
+      class="card-img-top img-fluid"
+      src= "{{ Heroe.img }}"
+      alt="Card image cap"
+    />
+    <div class="card-block" >
+      <h4 class="card-title"> {{ Heroe.nombre }} </h4>
+      <p class="card-text">
+        {{ Heroe.bio }}
+      </p>
+      <p class="card-text">
+        <small class="text-muted">{{Heroe.aparicion}}</small>
+      </p>
+      <!-- <button  (click)="verHeroe(i);" type="button" class="btn btn-outline-primary btn-block">
         Ver más
       </button> -->
-  <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary">Ver más...</a>
-</div>
+      <a  [routerLink]="['/heroe',index]" class="btn btn-outline-primary">Ver más...</a>
+    </div>
+  </div>
